@@ -4,71 +4,184 @@
   <meta charset="UTF-8" />
   <title>Digital Banker – Support & Privacy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
+      background: #0f3d2e;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      color: #1f2937;
+    }
+
+    .board {
+      max-width: 860px;
       margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-      color: #111;
+      background: #f8f5ee;
+      border: 12px solid #111;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
     }
-    h1, h2, h3 {
-      margin-top: 32px;
+
+    .header {
+      background: linear-gradient(135deg, #1f7a4f, #0f5132);
+      color: #fff;
+      padding: 36px 24px;
+      text-align: center;
+      border-bottom: 6px solid #111;
     }
+
+    .header h1 {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      letter-spacing: 1px;
+    }
+
+    .header p {
+      margin-top: 8px;
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    .content {
+      padding: 32px 28px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-top: 36px;
+      border-bottom: 3px solid #111;
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-top: 14px;
+      font-size: 16px;
+    }
+
+    .card {
+      border: 3px solid #111;
+      background: #ffffff;
+      padding: 20px 22px;
+      margin-top: 18px;
+    }
+
+    .label {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #065f46;
+    }
+
     a {
-      color: #2563eb;
+      color: #065f46;
+      font-weight: 600;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    .footer {
+      background: #111;
+      color: #e5e7eb;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .stamp {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 6px 12px;
+      border: 2px dashed #065f46;
+      font-weight: 700;
+      color: #065f46;
+      background: #ecfdf5;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Digital Banker</h1>
+<div class="board">
 
-<h2>Support</h2>
-<p>
-If you need help, have questions, or would like to provide feedback, please contact:
-</p>
+  <div class="header">
+    <h1>Digital Banker</h1>
+    <p>Support • Privacy • Player Peace of Mind</p>
+  </div>
 
-<p>
-<strong>Email:</strong>
-<a href="mailto:dustin.schaaf87@gmail.com">dustin.schaaf87@gmail.com</a>
-</p>
+  <div class="content">
 
-<h2>Privacy Policy</h2>
-<p><strong>Last updated:</strong> December 2025</p>
+    <h2>Support</h2>
 
-<p>
-Digital Banker respects your privacy. This app does not collect, store, or share
-personal data.
-</p>
+    <div class="card">
+      <p class="label">Need Help?</p>
+      <p>
+        For questions, issues, or feedback related to the Digital Banker app,
+        please contact us directly:
+      </p>
+      <p>
+        📧 <a href="mailto:dustin.schaaf87@gmail.com">dustin.schaaf87@gmail.com</a>
+      </p>
+      <span class="stamp">Official Support</span>
+    </div>
 
-<h3>Information Collection</h3>
-<p>
-Digital Banker does not collect personal identifiers, account information, location
-data, analytics, or tracking data. All app data is stored locally on the user’s device.
-</p>
+    <h2>Privacy Policy</h2>
 
-<h3>Third-Party Services</h3>
-<p>
-Digital Banker does not use third-party analytics, advertising, or tracking services.
-</p>
+    <div class="card">
+      <p class="label">Last Updated</p>
+      <p>September 2025</p>
 
-<h3>Children’s Privacy</h3>
-<p>
-Digital Banker does not knowingly collect personal information from children.
-</p>
+      <p>
+        Digital Banker respects your privacy. The app does <strong>not</strong> collect,
+        store, or share personal information.
+      </p>
 
-<h3>Contact</h3>
-<p>
-If you have questions about this Privacy Policy, contact:
-<br />
-<a href="mailto:dustin.schaaf87@gmail.com">dustin.schaaf87@gmail.com</a>
-</p>
+      <p class="label">Information Collection</p>
+      <p>
+        Digital Banker does not collect personal identifiers, account data,
+        location data, analytics, or tracking information. All game data
+        remains locally on the user’s device.
+      </p>
+
+      <p class="label">Third-Party Services</p>
+      <p>
+        This app does not use third-party analytics, advertising,
+        or tracking services.
+      </p>
+
+      <p class="label">Children’s Privacy</p>
+      <p>
+        Digital Banker does not knowingly collect personal information from children.
+      </p>
+
+      <p class="label">Contact</p>
+      <p>
+        Questions about this Privacy Policy may be sent to:
+        <br />
+        📧 <a href="mailto:dustin.schaaf87@gmail.com">dustin.schaaf87@gmail.com</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    Digital Banker • Independent • Not affiliated with any board game publisher
+  </div>
+
+</div>
 
 </body>
 </html>
